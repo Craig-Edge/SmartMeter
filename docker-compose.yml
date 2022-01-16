@@ -9,8 +9,8 @@ services:
     environment:
       - BROKERS=rabbitmq
       - PORT
-      - USER
-      - PASSWORD
+      - USER=guest
+      - PASSWORD=guest
     depends_on:
       - rabbitmq
     build:
@@ -27,5 +27,5 @@ services:
     environment:
       - BROKERS=rabbitmq
       - PORT
-      - USER
-      - PASSWORD
+      - USER=guest
+      - PASSWORD=guest
