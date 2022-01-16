@@ -25,7 +25,7 @@ services:
     volumes:
       - ./messaging/output_files:/usr/src/app/messaging/output_files
     environment:
-      - BROKERS
+      - BROKERS=rabbitmq
       - PORT
       - USER
       - PASSWORD
